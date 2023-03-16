@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <script src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            text-align: center;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .container {
+            padding: 2% 0%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        form input,
+        textarea {
+            padding: 1%;
+            margin: 2%;
+            outline: none;
+            border-color: #679393;
+            font-size: 15px;
+        }
+
+        .btn {
+            width: 70px;
+            margin: auto;
+            padding: 1%;
+            cursor: pointer;
+            border-color: #679393;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: rgb(61, 155, 172);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Contact details</h1>
+    </div>
+    <div class="container">
+
+
+        <form action="/contact" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="text" name="phone" placeholder="Enter your phone number" required>
+            <input type="email" name="mail" placeholder="Enter your email id" required>
+            <textarea name="desc" id="" cols="30" rows="10" placeholder="More about you" required></textarea>
+            <button class="btn">submit</button>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
